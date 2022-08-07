@@ -1,5 +1,5 @@
 {
-  "name": "cpustejovsky-gatsby-site",
+  "name": "cpustejovsky.github.io",
   "private": true,
   "description": "cpustejovsky personal site built with GatsbyJS",
   "version": "0.1.0",
@@ -31,11 +31,12 @@
     "react-mailchimp-subscribe": "^2.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^1.19.1",
     "sass": "^1.49.9"
   },
   "keywords": [
-    "gatsby"
+    "cpustejovsky"
   ],
   "license": "MIT",
   "scripts": {
@@ -46,13 +47,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "heroku-postbuild": "gatsby build",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/cpustejovsky.github.io"
   }
 }
