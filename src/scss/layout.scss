@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  @media screen and (max-width: 450px) {
+    overflow-x: hidden;
+  }
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+  // background-color: white;
+
+}
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.site {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: inset 0 0 10px #0000004f;
+  &__content {
+    margin: 5% 0;
+    max-width: 940px;
+  }
+  &__landing {
+    margin: 5% 0;
+    max-width: 800px;
+  }
+  &__section {
+    padding-top: 100px;
+  }
+  &__footer {
+    padding-top: 10vh;
+    align-self: flex-start;
+  }
+  &__404 {
+    width: 100vw;
+  }
+}
+
+.mementomori {
+  margin-top: -5vh;
+  padding: 5vh;
+  padding-top: 10vh;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 2vh;
+  }
+  &__link {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.introduction {
+  padding: 0 5%;
+  align-items: center;
+  box-shadow: 0px 11px 8px -5px #0000004f;
+}
+.projects {
+  &__collapse-header {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-top: 1vh;
+  }
+  &__section {
+    text-align: center;
+  }
+  &__image {
+    box-shadow: 0px 2px 10px #818181;
+    margin: 2%;
+    border-radius: 15px;
+  }
+}
+.test {
+  margin: 0 10px;
+}
