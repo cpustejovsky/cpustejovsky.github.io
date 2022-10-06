@@ -223,16 +223,14 @@ const gdprToggler: Project = {
 }
 
 const projects: Project[] = [
-  mongogo,
-  twitterBot,
   customSortGo,
-  lifeTogetherCalculator,
+  twitterBot,
+  // mongogo,
   headlessCms,
+  lifeTogetherCalculator,
+  // dynoWaker,
   gdprToggler,
-  dynoWaker,
   blog
-
-
 ]
 
 export default projects
