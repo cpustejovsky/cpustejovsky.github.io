@@ -34,9 +34,17 @@ export default function ReadingList() {
       <Typography variant="h4" style={{ marginTop: "5%" }}>
         Reading / Courses List
       </Typography>{" "}
-      <hr style={{ border: "1px solid #bababa" }} />
-      {currentlyReading}
-      <Grid>
+        <Grid item>
+            <Typography variant="h5" style={{ marginTop: "5%" }}>
+                Current  Reading
+            </Typography>
+        </Grid>
+        <Grid item>
+          <hr style={{ border: "1px solid #bababa" }} />
+          {currentlyReading}
+        </Grid>
+
+        <Grid>
         <Grid item>
           <Typography variant="h5" style={{ marginTop: "5%" }}>
             Recurring Reading

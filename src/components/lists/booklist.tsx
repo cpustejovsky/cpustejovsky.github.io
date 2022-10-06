@@ -6,8 +6,10 @@ import US3 from "../images/ultimate_service_3"
 import PragProg from "../images/pragprog"
 import DesertFathersImg from "../images/desertfathers"
 import LetsGo from "../images/lets_go"
-import GoBook from "../images/gobook"
+// import GoBook from "../images/gobook"
 import ConcurrencyInGo from "../images/concurrency_in_go"
+import Kafka from "../images/kafka"
+import DDS from "../images/domaindrivensystems"
 
 type CTA = {
   text: string,
@@ -21,6 +23,54 @@ type Book = {
   title: string,
   textArr: (string | JSX.Element)[],
   ctaArr: CTA[],
+}
+
+const dds: Book = {
+  read: false,
+  recurring: false,
+  Img: () => <DDS />,
+  title: "Designing Distributed Systems",
+  textArr: [
+    <p>
+      Helping build an event driven distributed systems showed me many of the gaps I have and infrastructure context I lacked. I decided to go through this book to remedy that.
+    </p>,
+    <p>
+      So far, it has been a wonderful and practical survey of various ways to use containers and orchestration to build a variety of systems.
+    </p>
+  ],
+  ctaArr: [
+    {
+      text: "Check it out on O'Reilly Media",
+      link:
+        "https://www.oreilly.com/library/view/designing-distributed-systems/9781491983638",
+    },
+  ],
+}
+
+
+const kafka: Book = {
+  read: false,
+  recurring: false,
+  Img: () => <Kafka />,
+  title: "Kafka: The Definitive Guide",
+  textArr: [
+    <p>
+      Kafka is a powerful tool with a host of challenges in store for the team that decides to use it. 
+    </p>,
+    <p>
+      Having now worked with Kafka for a little less than a year, I realize the need to have a deeper understanding of the technology.
+    </p>,
+    <p>
+      Even if you're using something like Confluent to manage Kafka for you, this book provides a great foundation for how to build and maintain high performance and reliable Kafka producers and consumers.
+    </p>
+  ],
+  ctaArr: [
+    {
+      text: "Check it out on O'Reilly Media",
+      link:
+        "https://www.oreilly.com/library/view/kafka-the-definitive/9781492043072/",
+    },
+  ],
 }
 
 const concurrencyGo: Book = {
@@ -45,27 +95,27 @@ const concurrencyGo: Book = {
     },
   ],
 }
-const goBook: Book = {
-  read: false,
-  recurring: false,
-  Img: () => <GoBook />,
-  title: "The Go Programming Language",
-  textArr: [
-    <p>
-      I'm going through this book and will be finishing it around the end of Hacktoberfest.
-    </p>,
-    <p>
-      Brian Kernighan has already written [one classic programming book](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628), so I believe I'm in good hands
-    </p>
-  ],
-  ctaArr: [
-    {
-      text: "Visit the Book's Site",
-      link:
-        "https://www.gopl.io/",
-    },
-  ],
-}
+// const goBook: Book = {
+//   read: false,
+//   recurring: false,
+//   Img: () => <GoBook />,
+//   title: "The Go Programming Language",
+//   textArr: [
+//     <p>
+//       I'm going through this book and will be finishing it around the end of Hacktoberfest.
+//     </p>,
+//     <p>
+//       Brian Kernighan has already written [one classic programming book](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628), so I believe I'm in good hands
+//     </p>
+//   ],
+//   ctaArr: [
+//     {
+//       text: "Visit the Book's Site",
+//       link:
+//         "https://www.gopl.io/",
+//     },
+//   ],
+// }
 const letsGo: Book = {
   read: true,
   recurring: false,
@@ -183,12 +233,12 @@ const grokkingAlgos = {
 }
 
 const ultimateServiceGo = {
-  read: false,
+  read: true,
   recurring: false,
   Img: () => <US3 />,
   title: "Ardan Labs Ultimate Service 3.0",
   textArr: [
-    "A friend recommended this course to me and I'm enjoying learn package driven design and idiomatic Go patterns for microservice architecture",
+    "A friend recommended this course to me and I enjoyed learn package driven design and idiomatic Go patterns for microservice architecture",
   ],
   ctaArr: [
     {
@@ -201,14 +251,16 @@ const ultimateServiceGo = {
 
 
 const books: Book[] = [
+  // goBook,
+  kafka,
+  dds,
   ultimateServiceGo,
-  concurrencyGo,
-  goBook,
-  letsGo,
   tddGo,
+  concurrencyGo,
   pragProg,
-  DesertFathers,
   scrum,
+  DesertFathers,
+  letsGo,
   grokkingAlgos,
 ]
 
