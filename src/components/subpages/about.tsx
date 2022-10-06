@@ -17,13 +17,14 @@ const About = () => {
           <Collapse in={skills}>
             <ul>
               <li>Go</li>
+              <li>gRPC</li>
+              <li>Protobuf</li>
+              <li>Kafka</li>
               <li>DynamoDB</li>
-              <li>MongoDB</li>
-              <li>SQL</li>
               <li>Docker</li>
               <li>Kubernetes</li>
-              <li>Writing Documentation</li>
-              <li>Breaking down and communicating complex ideas</li>
+              <li>MongoDB</li>
+              <li>SQL</li>
             </ul>
           </Collapse>
         </Grid>
@@ -38,11 +39,10 @@ const About = () => {
             <ul>
               <li>Distributed Systems</li>
               <li>Functional Programming</li>
-              <li>Hacking Productivity</li>
               <li>Classics (Greco-Roman)</li>
               <li>Theology</li>
               <li>Philosophy</li>
-              <li>Video Games</li>
+              <li>Dungeons and Dragons</li>
             </ul>
           </Collapse>
         </Grid>
