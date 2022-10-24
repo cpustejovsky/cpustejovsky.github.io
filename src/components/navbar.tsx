@@ -1,3 +1,4 @@
+// @ts-ignore
 import React from "react"
 import MenuIcon from "@material-ui/icons/Menu"
 import {
@@ -13,7 +14,7 @@ import {
 } from "@material-ui/core/"
 import { makeStyles } from "@material-ui/core/styles"
 import { Link } from "gatsby"
-import Resume from "./docs/Cpustejovsky_Resume.pdf"
+
 const useStyles = makeStyles(theme => ({
   menu: {
     display: "flex",
@@ -58,7 +59,7 @@ const NavBar = () => {
     return (
       <div className={classes.menu}>
         <div className={classes.menuItems}>
-          <a href={Resume}>
+          <a href="https://drive.google.com/file/d/1DilAxTcHQsPVQ4KnIi2eXmMY4bCwagqS/view">
             <Button variant="contained" color="primary">
               Resume
             </Button>
