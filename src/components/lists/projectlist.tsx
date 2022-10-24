@@ -44,6 +44,26 @@ const giles: Project = {
     current: true
 }
 
+const franz: Project = {
+    name: "franz",
+    title: "Franz (Kafka Wrapper)",
+    languages: "Go",
+    content: [
+        <p>I've spent a lot of time with Kafka or at least enough to know how difficult it can be to use.</p>,
+        <p>My ultimate goal with this project is to provide code wrappers for Kafka producers and consumers that can be
+            easily configured and extended to different applications.</p>,
+        <p>This repo will also have extensive integration testing with various configurations and patterns.</p>,
+    ],
+    links: [
+        {
+            text:
+                "Code",
+            link: "https://github.com/cpustejovsky/franz",
+        }
+    ],
+    current: true
+}
+
 const customSortGo: Project = {
     name: "customSortGo",
     title: "CS:GO (Custom Sort: Go)",
@@ -75,7 +95,7 @@ const customSortGo: Project = {
             link: "https://github.com/cpustejovsky/customsortgo/blob/main/string_test.go",
         },
     ],
-    current: true
+    current: false
 }
 
 
@@ -122,7 +142,7 @@ const mongogo: Project = {
             link: "https://github.com/cpustejovsky/mongogo",
         },
     ],
-    current: true
+    current: false
 }
 
 const lifeTogetherCalculator: Project = {
@@ -253,6 +273,7 @@ const gdprToggler: Project = {
 }
 
 const projects: Project[] = [
+    franz,
     giles,
     customSortGo,
     twitterBot,

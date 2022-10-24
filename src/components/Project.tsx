@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useState } from "react"
 
 import { Grid, Collapse } from "@material-ui/core"

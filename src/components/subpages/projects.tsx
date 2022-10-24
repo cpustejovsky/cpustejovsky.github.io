@@ -1,3 +1,4 @@
+// @ts-ignore
 import React, { useState } from "react"
 import {
   Container,
@@ -51,13 +52,6 @@ export default function Projects() {
         Here is a growing list of projects I'm working on or have worked on in
         the past. <strong>(click to close)</strong>
       </p>
-        <p>
-            Soon, I will be able to move some projects I've worked on at <a href={"https://groundfloor.us/"} target="_blank" rel="noreferrer noopener" >Groundfloor</a> to FOSS repositories and show them off, namely:
-            <ul>
-                <li>a package to interact with Kafka</li>
-                <li>a customizable file watcher to restart multiple services (like nodemon)</li>
-            </ul>
-        </p>
       {currentProjects}
       <Collapse in={checked}>{pastProjects}</Collapse>
     </Container>
