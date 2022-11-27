@@ -70,32 +70,19 @@ const customSortGo: Project = {
     languages: "Go",
     content: [
         <p>Frustrated with some whiteboard interviews I encountered, I decided to start making a repo to collect code
-            that sorts, reverses, etc.</p>,
-        <p>This allowed me to learn how to set up benchmark tests to see which reversal algorithm was faster.</p>,
-        <p>Also, trying to set up a generic sorting function, unsurprisingly, gave me an appreciation for Go's upcoming
-            inclusion of{" "}
-            <a
-                rel="noreferrer noopener"
-                target="_blank"
-                href="https://quii.gitbook.io/learn-go-with-tests/meta/intro-to-generics"
-            >
-                Generics
-            </a>.
-        </p>
+            that sorts data.</p>,
+        <p>This allowed me to learn how to set up benchmark tests to compare algorithm speeds.</p>,
+        <p>This repo is also where I first appreciated a need for generics and began including them in my code.</p>,
+        <p>I'm open to PRs and Issues with ideas and other recipes for different kinds of sorting</p>
     ],
     links: [
         {
             text:
                 "Code",
             link: "https://github.com/cpustejovsky/customsortgo",
-        },
-        {
-            text:
-                "Benchmark Tests",
-            link: "https://github.com/cpustejovsky/customsortgo/blob/main/string_test.go",
-        },
+        }
     ],
-    current: false
+    current: true
 }
 
 
@@ -169,7 +156,7 @@ const lifeTogetherCalculator: Project = {
         {
             text:
                 "Calculator",
-            link: "https://life-together-calculator.herokuapp.com/",
+            link: "https://life-together-calculator-1992.web.app/",
         },
         {
             text:
@@ -213,75 +200,13 @@ const headlessCms: Project = {
     current: false
 }
 
-const dynoWaker: Project = {
-    name: "dynoWaker",
-    title: "Dyno Waker",
-    languages: "NodeJS",
-    content: [`I created this to keep two of my Heroku dynos active from 6am to
-  9pm EST. I realized it might be useful for others who have a paid
-  dyno and some free dynos, so I published it as a NPM module.`],
-    links: [
-        {
-            text:
-                "NPM link",
-            link: "https://www.npmjs.com/package/cpustejovsky-dyno-waker",
-        },
-    ],
-    current: false
-}
-
-
-const gdprToggler: Project = {
-    name: "gdprToggler",
-    title: "GDPR Toggler",
-    languages: "jQuery",
-    content: [<p>
-        Love it or hate it, GDPR is a reality for businesses so I created
-        a jQuery script to dynamically display an opt-in option for
-        countries where that option was required (I used this{" "}
-        <a
-            rel="noreferrer noopener"
-            href="https://community.unbounce.com/t/how-to-use-geotargeting-to-display-a-visitors-location-on-a-page/5739"
-        >
-            AJAX script
-        </a>{" "}
-        to determine the country by IP address).{" "}
-        <strong>
-            This was my first real taste of working with jQuery.
-        </strong>{" "}
-        The scripts would need customization for the countries and for the
-        specific assets that are being displayed or hidden.
-    </p>],
-    links: [
-        {
-            text:
-                "Field Hiding Option",
-            link: "https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/fieldHider.html",
-        },
-        {
-            text:
-                "Radial Toggling Option",
-            link: "https://github.com/cpustejovsky/learnedingJavaScript/blob/master/useful_scripts/radialToggler.html",
-        },
-        {
-            text:
-                "Landing Page This is Used On",
-            link: "https://unbounce.bitpay.com/landing/blockchain-and-chargebacks-ebook/",
-        },
-    ],
-    current: false
-}
-
 const projects: Project[] = [
     franz,
     giles,
     customSortGo,
     twitterBot,
-    // mongogo,
     headlessCms,
     lifeTogetherCalculator,
-    // dynoWaker,
-    gdprToggler,
     blog
 ]
 
