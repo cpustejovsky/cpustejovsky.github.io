@@ -84,7 +84,7 @@ const twitterBot: Project = {
             link: "https://github.com/cpustejovsky/twitterbot",
         },
     ],
-    current: true
+    current: false
 }
 
 const lifeTogetherCalculator: Project = {
