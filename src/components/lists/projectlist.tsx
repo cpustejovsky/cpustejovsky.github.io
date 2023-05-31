@@ -19,31 +19,6 @@ type Project = {
     current: boolean
 }
 
-const giles: Project = {
-    name: "giles",
-    title: "Giles (file watcher)",
-    languages: "Go",
-    content: [
-        <p>My previous experience working a NodeJS monolith made me appreciate{" "}
-            <a rel="noreferrer noopener"
-               target="_blank"
-               href="https://www.npmjs.com/package/nodemon">nodemon</a>.
-        </p>,
-        <p>Locally developing multiple services for an event-driven distributed system motivated me to create a similar
-            solution.</p>,
-        <p>The code currently needs more work to be truly use-able. An ultimate goal will likely to have it as a CLI
-            that takes in a configuration file.</p>,
-    ],
-    links: [
-        {
-            text:
-                "Code",
-            link: "https://github.com/cpustejovsky/giles",
-        }
-    ],
-    current: true
-}
-
 const franz: Project = {
     name: "franz",
     title: "Franz (Kafka Wrapper)",
@@ -52,7 +27,6 @@ const franz: Project = {
         <p>I've spent a lot of time with Kafka or at least enough to know how difficult it can be to use.</p>,
         <p>My ultimate goal with this project is to provide code wrappers for Kafka producers and consumers that can be
             easily configured and extended to different applications.</p>,
-        <p>This repo will also have extensive integration testing with various configurations and patterns.</p>,
     ],
     links: [
         {
@@ -91,8 +65,8 @@ const twitterBot: Project = {
     title: "Twitter Bot",
     languages: "Go",
     content: [
-        <p>My first Go application, this Twitter bot gives me less
-            reasons to check Twitter by sending me updates from
+        <p>My first Go application, this Twitter bot gave me less
+            reasons to check Twitter (before Twitter's decline in 2023) by sending me updates from
             people I want to keep up with.</p>,
         <p>Since then, with the help of the amazing people on the{" "}
             <a
@@ -111,25 +85,6 @@ const twitterBot: Project = {
         },
     ],
     current: true
-}
-
-const mongogo: Project = {
-    name: "mongogo",
-    title: "Mongogo",
-    languages: "Go",
-    content: [
-        <p>Not satisfied with the monolithic template I had, I've been working on a service starter-kit that connects to
-            MongoDB.</p>,
-        <p>My goal with this starter-kit is for it to be idiomatic, modular, and scalable.</p>
-    ],
-    links: [
-        {
-            text:
-                "Code",
-            link: "https://github.com/cpustejovsky/mongogo",
-        },
-    ],
-    current: false
 }
 
 const lifeTogetherCalculator: Project = {
@@ -202,7 +157,6 @@ const headlessCms: Project = {
 
 const projects: Project[] = [
     franz,
-    giles,
     customSortGo,
     twitterBot,
     headlessCms,

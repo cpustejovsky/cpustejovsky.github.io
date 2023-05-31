@@ -11,17 +11,13 @@ const Introduction = () => (
         <Grid item className="padding-top" xs={12} sm={7}>
             <h3>Howdy!</h3>
             <p>
-                I'm Charles Pustejovsky.
+                I'm Charles Pustejovsky, a Go developer
             </p>
             <p>
-                I'm a software engineer who is passionate about providing value with programming.
+                I love learning new things and collaborating with others.
             </p>
             <p>
-                I use Go, Test-Driven Development
-                and SDLC methodologies to do this.
-            </p>
-            <p>
-                I focus on empathy, continuing education, and skills improvement.
+                I love building software that is flexible and scalable, software that will last.
             </p>
         </Grid>
     </Grid>
